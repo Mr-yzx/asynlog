@@ -21,7 +21,8 @@ public:
         FATAL,
         OFF
     };
-    std::string LogLevelToString(LogLevel::Level level)
+    /*声明为静态函数，方便其他文件通过类名调用，而不用实例化类*/
+    static std::string LogLevelToString(LogLevel::Level level)
     {
         switch (level)
         {
