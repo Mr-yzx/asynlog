@@ -15,7 +15,7 @@ public:
     enum class Level
     {
         DEBUG = 0,
-        INTO,
+        INFO,
         WARNING,
         ERROR,
         FATAL,
@@ -28,7 +28,7 @@ public:
         {
             case LogLevel::Level::DEBUG:
                 return "DEBUG";
-            case LogLevel::Level::INTO:
+            case LogLevel::Level::INFO:
                 return "INFO";
             case LogLevel::Level::WARNING:
                 return "WARNING";
